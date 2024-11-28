@@ -8,10 +8,7 @@
 
 
 body{
-    margin: 0;
-    padding: 0;
-    height: 400vh;
-    display: flex;
+    min-height: 400vh;
     background: radial-gradient(#26243d 10px, #140f09 );
 }
 
@@ -25,97 +22,154 @@ header{
     position: fixed;
     top: 10px;
     width: 100%;
-    background-color: none;
-    color: none;
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
 }
 
-/*Estilo botones del header*/
-.info_buttons{
+.nav-list{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.info_buttons .btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: none;
-    color: whitesmoke;
+
+.nav-item{
+    list-style: none;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-item a{
     text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.info_buttons .btn:hover{
-    border-style: inset;
-    border-radius: 8px;
     color: whitesmoke;
 }
 
-.main_title{
+.nav-item:hover{
+    transform: scale(1.1);
+}
+
+.main-content{
     display: flex;
-    position: relative;
-    margin-left: 340px;
-    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.main-title{
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title h1{
+    display: flex;
     width: 100%;
     color: whitesmoke;
-    font-size: 22px;
-    top: 130px;
+    font-size: 30px;
 }
 
-.main_title .letraUno{
+.highlight-text{
     color: #ff66ff;
+    margin: 0 10px 0 10px;
 }
 
-.profile_img{
+.profile-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img{
     position: relative;
-    display: block;
-}
-
-.profile_img img{
-    display: flex;
-    top: 280px;
-    right: 950px;
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    border: none;
+    border: 2px solid #ff66ff;
 }
 
-.notification{
+.profile-image h3{
     position: absolute;
-    top: 500px;
-    right: 960px;
-    padding: 8px ;
-    color: whitesmoke;
-    border: 1px solid white;
-    border-radius: 8px;
-    z-index: 10;
-    width: 160px;
-    text-align: center;
+    bottom: 240px;
+    font-weight: 100;
 }
 
-.about_me{
+.name-card{
+    position: absolute;
+    bottom: 200px;
+    background-color: rgba(255, 102, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.about-me{
     display: flex;
-    width: 80%;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
     color: whitesmoke;
-    width: 50%;
-    top: 280px;
-    margin-left: 500px;
 }
 
-.about_me p{
-    text-align: justify;
-    text-align-last: justify;
-    line-height: 1.6;
-    color: whitesmoke;
-    font-size: 17px;
-    word-spacing: 0.2px;
+.project-card-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+#copy{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .main-content {
+        flex-direction: column;
+        margin-top: 150px;
+        gap: 20px;
+    }
+
+    .main-title h1 {
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name-card {
+        bottom: -40px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-title h1 {
+        font-size: 20px;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+    
     
