@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 400vh;
+    display: flex;
+    background: radial-gradient(#26243d 10px, #140f09 );
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estilo del header*/
+header{ 
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    background-color: none;
+    color: none;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/*Estilo botones del header*/
+.info_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.info_buttons .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: none;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.info_buttons .btn:hover{
+    border-style: inset;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+
+.main_title{
+    display: flex;
+    position: relative;
+    margin-left: 340px;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 22px;
+    top: 130px;
+}
+
+.main_title .letraUno{
+    color: #ff66ff;
+}
+
+.profile_img{
+    position: relative;
+    display: block;
+}
+
+.profile_img img{
+    display: flex;
+    top: 280px;
+    right: 950px;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: none;
+}
+
+.notification{
+    position: absolute;
+    top: 500px;
+    right: 960px;
+    padding: 8px ;
+    color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 8px;
+    z-index: 10;
+    width: 160px;
+    text-align: center;
+}
+
+.about_me{
+    display: flex;
+    width: 80%;
+    position: absolute;
+    color: whitesmoke;
+    width: 50%;
+    top: 280px;
+    margin-left: 500px;
+}
+
+.about_me p{
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 1.6;
+    color: whitesmoke;
+    font-size: 17px;
+    word-spacing: 0.2px;
+}
+
+    
