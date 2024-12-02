@@ -107,7 +107,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     color: whitesmoke;
 }
@@ -116,9 +116,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
 }
 
+.project-card-one h2{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.project-card-one .project-reloj img{
+    width: 500px;
+    height: auto;
+
+}
 #copy{
     position: fixed;
     bottom: 0;
