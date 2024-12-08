@@ -66,7 +66,7 @@ header{
     display: flex;
     width: 100%;
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .highlight-text{
@@ -111,23 +111,64 @@ header{
     text-align: center;
     color: whitesmoke;
 }
-
-.project-card-one{
+.logo-component{
     display: flex;
+    margin-top: -100px;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    height: 50vh;
+    gap: 50px;
+    font-size: 50px;
+}
+.logo-component .fa-git{
+    color: rgb(255, 255, 255);
 }
 
-.project-card-one h2{
+.logo-component .fa-js{
+    color: rgb(250, 246, 0);
+}
+.logo-component .fa-html5{
+    color:rgb(250, 112, 0);
+}
+.logo-component .fa-css3-alt{
+    color:rgb(0, 108, 250);
+}
+.subtitle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.subtitle h1{
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #ff66ff;
 }
 
-.project-card-one .project-reloj img{
-    width: 500px;
-    height: auto;
 
+.project-gallery {
+    margin-top: 80px;
+    display: flex;
+    width: 1300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-gallery img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.project-gallery img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    
 }
 #copy{
     position: fixed;
