@@ -48,7 +48,19 @@ header{
 .nav-item:hover{
     transform: scale(1.1);
 }
-
+/* menu hamburguesa dispositivos mobiles */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar{
+    background: white;
+    height: 4px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s; 
+}
 .main-content{
     display: flex;
     flex-direction: row-reverse;
@@ -180,9 +192,28 @@ header{
 }
 
 @media screen and (max-width: 768px) {
-    .nav-list {
-        flex-direction: column;
+    .menu-toggle{
+        display: flex;
     }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: transparent;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+      }
+    
+      .nav-item {
+        margin: 1rem 0;
+      }
 
     .main-content {
         flex-direction: column;
